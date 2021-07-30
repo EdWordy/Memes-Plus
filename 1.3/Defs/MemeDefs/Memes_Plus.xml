@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+  <MemeGroupDef>
+    <defName>Plus</defName>
+    <drawOffset>(0.5, 0.5)</drawOffset>
+    <maxRows>1</maxRows>
+    <renderOrder>1000</renderOrder>
+    <renderWithGap>true</renderWithGap>
+  </MemeGroupDef>
+ 
+ 
+ 
+	<!-- Might Makes Right -->
+ 
+  <MemeDef>
+    <defName>MightMakesRight</defName>
+    <label>might makes right</label>
+    <description>Only the strong survive. The weak, do not.</description>
+    <iconPath>UI/Memes/MightMakesRight</iconPath>
+    <groupDef>Plus</groupDef>
+    <impact>3</impact>
+    <generalRules>
+      <rulesStrings>
+        <li>memeAdjective->strongman</li>
+        <li>memeAdjective->mightist</li>
+        <li>memeCreed->division</li>
+        <li>memeCreed->academy</li>
+        <li>memeCreed->battlegroup</li>
+        <li>memeCreed->philosophy</li>
+        <li>memeHyphenPrefix->mighty</li>
+        <li>memeHyphenPrefix->strong</li>
+        <li>memeHyphenPrefix->gigantic</li>
+        <li>memeHyphenPrefix->powerful</li>
+        <li>memeConcept->violence</li>
+        <li>memeConcept->might</li>
+        <li>memeConcept->strength</li>
+        <li>memeConcept->tactics</li>
+        <li>memeConcept->power</li>
+        <li>memeLeaderNoun->supreme</li>
+        <li>memeLeaderNoun->general</li>
+        <li>memeLeaderNoun->leader</li>
+        <li>memeLeaderAdjective->militarist</li>
+        <li>memeLeaderAdjective->tactician</li>
+        <li>memeMoralist->corrector</li>
+        <li>memeMoralist->fixer</li>
+        <li>memeMoralist->punisher</li>
+        <li>memeMoralist->warden</li>
+      </rulesStrings>
+    </generalRules>
+    <descriptionMaker>
+      <rules>
+       <rulesStrings>
+          <!-- theist myth -->
+          <li>creation(tag=meme_MightMakesRight)        ->[deity0_name] granted us the knowledge of power, that we may use it to improve and remake ourselves in [deity0_possessive] perfect image.</li>
+          <li>episode(uses=1,tag=meme_MightMakesRight)  ->Violence inspired the works of [deity0_name], which pleased [deity0_objective].</li>
+          <!-- theist founder -->
+          <li>intro(tag=meme_MightMakesRight)           ->On the [place_summary] [place_name], the [memberNamePlural] found the words of [deity0_name] whispering to them through their weapons.</li>
+          <li>conflict(tag=meme_MightMakesRight)        ->A weakling [foeLeader] envied the enhanced stature of the [memberNamePlural], and [foeLeader_possessive] [foeSoldiers] destroyed them with [place_personalWeapon]s.</li>
+          <li>founderJoin(tag=meme_MightMakesRight)     ->A powerful [place_job] named [founderName] personally ran 10 miles to warn the [memberNamePlural] of the approach of the [foeSoldiers].</li>
+          <li>victory(tag=meme_MightMakesRight)         ->[founderName] received divine techniques and knowledge from [deity0_name], and used it to enhance the bodies and minds of the [memberNamePlural] so they could defeat the [foeSoldiers].</li>
+          <!-- ideological founder -->
+          <li>setup(tag=meme_MightMakesRight)           ->[founderName] was a military soldier in the early days of human planetary colonization. Seeing the bureaucratic restrictions of the common colonies, [founder_pronoun] took a small ship to found [founder_possessive] own movement.</li>
+          <li>story(uses=1,tag=meme_MightMakesRight)    ->[founderName] assembled a team of great scientists and inventors to re-define humanity.</li>
+          <!-- ideological lesson -->
+          <li>lessonIntro(tag=meme_MightMakesRight)         ->The oldest member in my division taught me the history of technology, from neolithic to archotech, but this was not his true lesson. He was really leading me to understand that</li>
+          <li>lesson(tag=meme_MightMakesRight)              ->humanitys heavenly future is not a thing of cowardice and hesitance, but of sureness and violence.</li>
+          <li>lessonReinforcement(tag=meme_MightMakesRight) ->All of my battles have proved so thus far.</li>
+          <!-- archist -->
+          <li>archistBasis(tag=meme_MightMakesRight)    ->Humanitys pursuit of violence gave birth to the all-powerful archotechs as the rightful next step in the development of consciousness.</li>
+          <li>archistFact(tag=meme_MightMakesRight)     ->Violence allows humans to be more like the archotechs.</li>
+          <li>archistProphecy(tag=meme_MightMakesRight) ->[inTheEnd], the archotechs will depart. Only those who are sufficiently strong will be allowed to go with them.</li>
+          <!-- animist -->
+          <li>animistBasis(tag=meme_MightMakesRight)    ->The spirit world drives every action in the universe, and it is only by learning and controlling the laws of the universe that we can integrate with it.</li>
+          <li>animistFact(tag=meme_MightMakesRight)     ->Like seeks like - find a purpose for violence and it will filled with a spirit of a like nature.</li>
+          <li>animistFact(tag=meme_MightMakesRight)     ->When violence is fused with flesh, the spirits of both are combined and become more powerful.</li>
+          <li>animistProphecy(tag=meme_MightMakesRight) ->[itIsSaid] that one day the wielder of the [relic0_name] will summon its spirit who will teach humanity the ultimate knowledge of War.</li>
+        </rulesStrings>
+      </rules>
+    </descriptionMaker>
+    <preferredWeaponClasses>
+      <noble>Ultratech</noble>
+      <despised>Neolithic</despised>
+    </preferredWeaponClasses>
+    <requireOne>
+      <li>
+        <li>Slavery_Honorable</li>
+      </li>
+      <li>
+        <li>Execution_Required</li>
+      </li>
+      <li>
+        <li>Comfort_Ignored</li>
+      </li>
+      <li>
+        <li>NutrientPasteEating_DontMind</li>
+      </li>
+    </requireOne>
+	 <symbolPacks>
+      <li>
+        <ideoName>Militarism</ideoName>
+        <theme>military</theme>
+        <adjective>Miltiaristic</adjective>
+        <member>militant</member>
+      </li>
+	  <li>
+        <ideoName>Tyranny</ideoName>
+        <theme>terror</theme>
+        <adjective>Tyrannical</adjective>
+        <member>subject</member>
+      </li>
+    </symbolPacks>
+    <styleItemTags>
+      <li>
+        <tag>NoBeard</tag>
+        <weightFactor>2</weightFactor>
+      </li>
+    </styleItemTags>
+    <thingStyleCategories>
+      <li>
+        <category>Military</category>
+        <priority>4</priority>
+      </li>
+	  <li>
+        <category>Spikecore</category>
+        <priority>4</priority>
+      </li>
+    </thingStyleCategories>
+	<agreeableTraits>
+      <li>Psychopath</li>
+	  <li>Bloodlust</li>
+	  <li>Abrasive</li>
+    </agreeableTraits>
+    <disagreeableTraits>
+      <li>Wimp</li>
+	  <li>Neurotic</li>
+    </disagreeableTraits> 
+  </MemeDef>
+  
+  
+  
+  	<!-- Greed Is Good -->
+ 
+  <MemeDef>
+    <defName>GreedIsGood</defName>
+    <label>greed is good</label>
+    <description>The best thing in life is wealth, and lots of it.</description>
+    <iconPath>UI/Memes/GreedIsGood</iconPath>
+    <groupDef>Plus</groupDef>
+    <impact>3</impact>
+    <generalRules>
+      <rulesStrings>
+        <li>memeAdjective->capitalist</li>
+        <li>memeAdjective->merchant</li>
+        <li>memeCreed->tradegroup</li>
+        <li>memeCreed->party</li>
+        <li>memeCreed->division</li>
+        <li>memeCreed->values</li>
+        <li>memeHyphenPrefix->rich</li>
+        <li>memeHyphenPrefix->succesful</li>
+        <li>memeHyphenPrefix->gigantic</li>
+        <li>memeHyphenPrefix->powerful</li>
+        <li>memeConcept->money</li>
+        <li>memeConcept->power</li>
+        <li>memeConcept->greed</li>
+		<li>memeConcept->profit</li>
+        <li>memeLeaderNoun->CEO</li>
+        <li>memeLeaderNoun->finacier</li>
+        <li>memeLeaderNoun->leader</li>
+        <li>memeLeaderAdjective->corpratist</li>
+        <li>memeLeaderAdjective->brilliant</li>
+        <li>memeMoralist->HR</li>
+        <li>memeMoralist->fixer</li>
+        <li>memeMoralist->teacher</li>
+        <li>memeMoralist->guide</li>
+      </rulesStrings>
+    </generalRules>
+    <descriptionMaker>
+      <rules>
+       <rulesStrings>
+          <!-- theist myth -->
+          <li>creation(tag=meme_GreedIsGood)        ->[deity0_name] granted us the knowledge of money, that we may use it to improve and remake ourselves in [deity0_possessive] perfect image.</li>
+          <li>episode(uses=1,tag=meme_GreedIsGood)  ->Profit inspired the works of [deity0_name], which pleased [deity0_objective].</li>
+          <!-- theist founder -->
+          <li>intro(tag=meme_GreedIsGood)           ->On the [place_summary] [place_name], the [memberNamePlural] found the words of [deity0_name] whispering to them through their trades.</li>
+          <li>conflict(tag=meme_GreedIsGood)        ->A weakling [foeLeader] envied the enhanced stature of the [memberNamePlural], and [foeLeader_possessive] [foeSoldiers] destroyed them with [place_personalWeapon]s.</li>
+          <li>founderJoin(tag=meme_GreedIsGood)     ->A powerful [place_job] named [founderName] sent his staff to warn the [memberNamePlural] of the approach of the [foeSoldiers].</li>
+          <li>victory(tag=meme_GreedIsGood)         ->[founderName] received knowledge and wealth from [deity0_name], and used it to enhance the bodies and minds of the [memberNamePlural] so they could defeat the [foeSoldiers].</li>
+          <!-- ideological founder -->
+          <li>setup(tag=meme_GreedIsGood)           ->[founderName] was a trader in the early days of human planetary colonization. Seeing the bureaucratic restrictions of the common colonies, [founder_pronoun] took a small ship to found [founder_possessive] own movement.</li>
+          <li>story(uses=1,tag=meme_GreedIsGood)    ->[founderName] assembled a team of great scientists and craftsmen to re-define humanity.</li>
+          <!-- ideological lesson -->
+          <li>lessonIntro(tag=meme_GreedIsGood)         ->The oldest member in my company taught me the history of technology, from neolithic to archotech, but this was not his true lesson. He was really leading me to understand that</li>
+          <li>lesson(tag=meme_GreedIsGood)              ->humanitys heavenly future is not a thing of poverty and hesitance, but of sureness and wealth.</li>
+          <li>lessonReinforcement(tag=meme_GreedIsGood) ->All of my deals have proved so thus far.</li>
+          <!-- archist -->
+          <li>archistBasis(tag=meme_GreedIsGood)    ->Humanitys pursuit of wealth gave birth to the all-powerful archotechs as the rightful next step in the development of consciousness.</li>
+          <li>archistFact(tag=meme_GreedIsGood)     ->Wealth allows humans to be more like the archotechs.</li>
+          <li>archistProphecy(tag=meme_GreedIsGood) ->[inTheEnd], the archotechs will depart. Only those who are sufficiently wealthy will be allowed to go with them.</li>
+          <!-- animist -->
+          <li>animistBasis(tag=meme_GreedIsGood)    ->The spirit world drives every action in the universe, and it is only by learning and controlling the laws of the universe that we can integrate with it.</li>
+          <li>animistFact(tag=meme_GreedIsGood)     ->Like seeks like - find a purpose for wealth and it will filled with a spirit of a like nature.</li>
+          <li>animistFact(tag=meme_GreedIsGood)     ->When money is fused with flesh, the spirits of both are combined and become more powerful.</li>
+          <li>animistProphecy(tag=meme_GreedIsGood) ->[itIsSaid] that one day the wielder of the [relic0_name] will summon its spirit who will teach humanity the ultimate knowledge of Wealth.</li>
+        </rulesStrings>
+      </rules>
+    </descriptionMaker>
+    <requireOne>
+      <li>
+        <li>OrganUse_Acceptable</li>
+      </li>
+	   <li>
+        <li>Slavery_Acceptable</li>
+      </li>
+    </requireOne>
+	<symbolPacks>
+      <li>
+        <ideoName>Capitalism</ideoName>
+        <theme>capital</theme>
+        <adjective>Capitalistic</adjective>
+        <member>capitalist</member>
+      </li>
+	  <li>
+        <ideoName>Mercantilism</ideoName>
+        <theme>merchandise</theme>
+        <adjective>Mercantilistic</adjective>
+        <member>merchant</member>
+      </li>
+    </symbolPacks>
+    <styleItemTags>
+      <li>
+        <tag>Urban</tag>
+        <weightFactor>2</weightFactor>
+      </li>
+    </styleItemTags>
+    <thingStyleCategories>
+      <li>
+        <category>Capitalist</category>
+        <priority>4</priority>
+      </li>
+	  <li>
+        <category>Industrialist</category>
+        <priority>4</priority>
+      </li>
+    </thingStyleCategories>
+	<agreeableTraits>
+      <li>Greedy</li>
+	  <Industriousness>1</Industriousness>
+	  <Industriousness>2</Industriousness>
+    </agreeableTraits>
+    <disagreeableTraits>
+     <Industriousness>-1</Industriousness>
+	 <Industriousness>-2</Industriousness>
+    </disagreeableTraits> 
+  </MemeDef>
+  
+  
+  
+	<!-- Etc -->
+  
+  
+  
+</Defs>

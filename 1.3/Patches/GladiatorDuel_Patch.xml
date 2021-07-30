@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- Might Makes Right -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/PreceptDef[defName="GladiatorDuel"]/requiredMemes</xpath>
+        <value>
+            <li>MightMakesRight</li>
+        </value>
+    </Operation>
+</Patch>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Issues -->
+
+  <IssueDef>
+    <defName>Violence</defName>
+    <label>Violence</label>
+    <iconPath>UI/Issues/Violence</iconPath>
+  </IssueDef>
+  
+  <!-- History event def -->
+  
+  <HistoryEventDef>
+		<defName>ViolenceWitnessed</defName>
+		<label>violence witnessed</label>
+	</HistoryEventDef>
+	
+	 <!-- Precepts -->
+
+  <PreceptDef>
+    <defName>Violence_Welcomed</defName>
+    <issue>Violence</issue>
+    <label>welcomed</label>
+    <description>We don't need to separate ourselves from the violence of nature.</description>
+    <impact>High</impact>
+    <displayOrderInIssue>0</displayOrderInIssue>
+    <associatedMemes>
+      <li>Blindsight</li>
+      <li>PainIsVirtue</li>
+    </associatedMemes>
+    <requiredMemes>
+      <li>Supremacist</li>
+      <li>MightMakesRight</li>
+    </requiredMemes>
+	  <comps>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <thought>ViolenceWitnessedGood</thought>
+        <eventDef>ViolenceWitnessed</eventDef>
+      </li>
+	  </comps>
+  </PreceptDef>
+  
+  <PreceptDef>
+    <defName>Violence_Acceptable</defName>
+    <issue>Violence</issue>
+    <label>acceptable</label>
+    <description>Whether or not death happens is none of our concern.</description>
+    <impact>Medium</impact>
+    <displayOrderInIssue>20</displayOrderInIssue>
+    <associatedMemes>
+      <li>Loyalist</li>
+      <li>PainIsVirtue</li>
+    </associatedMemes>
+    <comps>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <thought>ViolenceWitnessedNeutral</thought>
+      </li>
+	  </comps>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>Violence_Disagreeable</defName>
+    <issue>Violence</issue>
+    <label>disagreeable</label>
+    <description>Death is unacceptable, in any form.</description>
+    <impact>High</impact>
+    <displayOrderInIssue>20</displayOrderInIssue>
+    <associatedMemes>
+	  <li>Transhumanist</li>
+      <li>HumanPrimacy</li>
+    </associatedMemes>
+    <comps>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <thought>ViolenceWitnessedBad</thought>
+      </li>
+	  </comps>
+  </PreceptDef>
+
+
+</Defs>
