@@ -1,6 +1,8 @@
 # Memes-Plus
 
-Adds several new memes and precepts to the game. Requires Styles Plus.
+Requires Styles Plus.
+
+Adds several new memes and precepts to the game.
 
 ---
 
