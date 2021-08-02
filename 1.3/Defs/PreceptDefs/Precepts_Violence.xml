@@ -1,81 +1,90 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!-- Issues -->
+	<!-- Issues -->
 
-  <IssueDef>
-    <defName>Violence</defName>
-    <label>Violence</label>
-    <iconPath>UI/Issues/Violence</iconPath>
-  </IssueDef>
-  
-  <!-- History event def -->
-  
-  <HistoryEventDef>
-		<defName>ViolenceWitnessed</defName>
-		<label>violence witnessed</label>
+	<IssueDef>
+		<defName>ObservedViolence</defName>
+		<label>Observed Violence</label>
+		<iconPath>UI/Issues/Violence</iconPath>
+	</IssueDef>
+
+	<!-- History event def -->
+
+	<HistoryEventDef>
+		<defName>ObservedViolence</defName>
+		<label>Observed Violence</label>
 	</HistoryEventDef>
 	
-	 <!-- Precepts -->
+	<HistoryEventDef>
+		<defName>CommittedViolence</defName>
+		<label>Committed Violence</label>
+	</HistoryEventDef>
 
-  <PreceptDef>
-    <defName>Violence_Welcomed</defName>
-    <issue>Violence</issue>
-    <label>welcomed</label>
-    <description>We don't need to separate ourselves from the violence of nature.</description>
-    <impact>High</impact>
-    <displayOrderInIssue>0</displayOrderInIssue>
-    <associatedMemes>
-      <li>Blindsight</li>
-      <li>PainIsVirtue</li>
-    </associatedMemes>
-    <requiredMemes>
-      <li>Supremacist</li>
-      <li>MightMakesRight</li>
-    </requiredMemes>
-	  <comps>
-      <li Class="PreceptComp_SelfTookMemoryThought">
-        <thought>ViolenceWitnessedGood</thought>
-        <eventDef>ViolenceWitnessed</eventDef>
-      </li>
-	  </comps>
-  </PreceptDef>
+	<!-- Indifferent Violence -->
+	<PreceptDef>
+		<defName>Violence_Acceptable</defName>
+		<issue>ObservedViolence</issue>
+		<label>acceptable</label>
+		<description>Violence happens, there's no need to get worked up over it.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>20</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<associatedMemes>
+			<li>Transhumanist</li>
+			<li>HumanPrimacy</li>
+		</associatedMemes>
+	</PreceptDef>
   
-  <PreceptDef>
-    <defName>Violence_Acceptable</defName>
-    <issue>Violence</issue>
-    <label>acceptable</label>
-    <description>Whether or not death happens is none of our concern.</description>
-    <impact>Medium</impact>
-    <displayOrderInIssue>20</displayOrderInIssue>
-    <associatedMemes>
-      <li>Loyalist</li>
-      <li>PainIsVirtue</li>
-    </associatedMemes>
-    <comps>
-      <li Class="PreceptComp_SelfTookMemoryThought">
-        <thought>ViolenceWitnessedNeutral</thought>
-      </li>
-	  </comps>
-  </PreceptDef>
-
-  <PreceptDef>
-    <defName>Violence_Disagreeable</defName>
-    <issue>Violence</issue>
-    <label>disagreeable</label>
-    <description>Death is unacceptable, in any form.</description>
-    <impact>High</impact>
-    <displayOrderInIssue>20</displayOrderInIssue>
-    <associatedMemes>
-	  <li>Transhumanist</li>
-      <li>HumanPrimacy</li>
-    </associatedMemes>
-    <comps>
-      <li Class="PreceptComp_SelfTookMemoryThought">
-        <thought>ViolenceWitnessedBad</thought>
-      </li>
-	  </comps>
-  </PreceptDef>
-
-
+	<!-- Hates Violence -->
+	<PreceptDef>
+		<defName>Violence_Abhorrent</defName>
+		<issue>ObservedViolence</issue>
+		<label>abhorrent</label>
+		<description>Violence is unacceptable, in any form.</description>
+		<impact>High</impact>
+		<displayOrderInIssue>20</displayOrderInIssue>
+		<displayOrderInImpact>80</displayOrderInImpact>
+		<defaultSelectionWeight>1</defaultSelectionWeight>
+		<associatedMemes>
+			<li>Transhumanist</li>
+			<li>HumanPrimacy</li>
+		</associatedMemes>
+		<comps>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>ObservedViolence</eventDef>
+				<thought>ObservedViolence_Abhorrent</thought>
+			</li>
+			<li Class="PreceptComp_KnowsMemoryThought">
+				<eventDef>CommittedViolence</eventDef>
+				<thought>ObservedViolence_Know_Abhorrent</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	
+	<!-- Loves Violence -->
+	<PreceptDef>
+		<defName>Violence_Preferred</defName>
+		<issue>ObservedViolence</issue>
+		<label>preferred</label>
+		<description>Violence is awesome, we need more of it.</description>
+		<impact>High</impact>
+		<displayOrderInIssue>20</displayOrderInIssue>
+		<displayOrderInImpact>80</displayOrderInImpact>
+		<defaultSelectionWeight>1</defaultSelectionWeight>
+		<associatedMemes>
+			<li>Transhumanist</li>
+			<li>HumanPrimacy</li>
+		</associatedMemes>
+		<comps>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>ObservedViolence</eventDef>
+				<thought>ObservedViolence_Preferred</thought>
+			</li>
+			<li Class="PreceptComp_KnowsMemoryThought">
+				<eventDef>CommittedViolence</eventDef>
+				<thought>ObservedViolence_Know_Preferred</thought>
+			</li>
+		</comps>
+	</PreceptDef>
 </Defs>

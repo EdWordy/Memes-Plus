@@ -1,0 +1,7 @@
+D:\Steam\steamapps\common\RimWorld\Mods\Memes-Plus\1.3\Assemblies\MemesPlus.dll
+D:\Steam\steamapps\common\RimWorld\Mods\Memes-Plus\1.3\Assemblies\MemesPlus.pdb
+D:\Steam\steamapps\common\RimWorld\Mods\Memes-Plus\Source\MemesPlus\obj\Debug\MemesPlus.csprojAssemblyReference.cache
+D:\Steam\steamapps\common\RimWorld\Mods\Memes-Plus\Source\MemesPlus\obj\Debug\MemesPlus.csproj.CoreCompileInputs.cache
+D:\Steam\steamapps\common\RimWorld\Mods\Memes-Plus\Source\MemesPlus\obj\Debug\MemesPlus.csproj.CopyComplete
+D:\Steam\steamapps\common\RimWorld\Mods\Memes-Plus\Source\MemesPlus\obj\Debug\MemesPlus.dll
+D:\Steam\steamapps\common\RimWorld\Mods\Memes-Plus\Source\MemesPlus\obj\Debug\MemesPlus.pdb
