@@ -31,8 +31,8 @@
 		<displayOrderInIssue>20</displayOrderInIssue>
 		<displayOrderInImpact>100</displayOrderInImpact>
 		<associatedMemes>
-			<li>Transhumanist</li>
 			<li>HumanPrimacy</li>
+			<li>GreedIsGood</li>
 		</associatedMemes>
 	</PreceptDef>
   
@@ -48,6 +48,7 @@
 		<defaultSelectionWeight>1</defaultSelectionWeight>
 		<associatedMemes>
 			<li>Transhumanist</li>
+			<li>AnimalPersonhood</li>
 			<li>HumanPrimacy</li>
 		</associatedMemes>
 		<comps>
@@ -73,8 +74,9 @@
 		<displayOrderInImpact>80</displayOrderInImpact>
 		<defaultSelectionWeight>1</defaultSelectionWeight>
 		<associatedMemes>
-			<li>Transhumanist</li>
-			<li>HumanPrimacy</li>
+			<li>MightMakesRight</li>
+			<li>Loyalist</li>
+			<li>Supremacist</li>
 		</associatedMemes>
 		<comps>
 			<li Class="PreceptComp_SelfTookMemoryThought">
