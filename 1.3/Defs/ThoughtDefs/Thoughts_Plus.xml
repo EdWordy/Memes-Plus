@@ -17,7 +17,7 @@
 		<stages>
 		  <li>
 			<label>hates violence</label>
-			<description>I hate watching people fight.</description>
+			<description>I hate fighting.</description>
 			<baseMoodEffect>-5</baseMoodEffect>
 		  </li>
 		</stages>
@@ -57,7 +57,7 @@
 		<stages>
 		  <li>
 			<label>loves violence</label>
-			<description>I love watching people fight.</description>
+			<description>I love fighting.</description>
 			<baseMoodEffect>5</baseMoodEffect>
 		  </li>
 		</stages>
