@@ -28,6 +28,11 @@ namespace MemesPlus
 				{
 					GiveCommittedViolenceHistoryEvent(__instance, instigator);
 				}
+				Map map = __instance.Map ?? dinfo.Instigator.Map;
+				if (map is null)
+				{
+					return;
+				}
 				RegionTraverser.BreadthFirstTraverse(__instance.Position, __instance.Map, (Region from, Region to) => __instance.Position.InHorDistOf(to.extentsClose.ClosestCellTo(__instance.Position), 5f), delegate (Region reg)
 				{
 					foreach (Thing thing in reg.ListerThings.ThingsInGroup(ThingRequestGroup.Pawn))
@@ -38,7 +43,7 @@ namespace MemesPlus
 						}
 					}
 					return true;
-				}, 999999, RegionType.Set_Passable);
+				});
 			}
 		}
 
