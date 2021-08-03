@@ -33,7 +33,7 @@ namespace MemesPlus
 				{
 					return;
 				}
-				RegionTraverser.BreadthFirstTraverse(__instance.Position, __instance.Map, (Region from, Region to) => __instance.Position.InHorDistOf(to.extentsClose.ClosestCellTo(__instance.Position), 5f), delegate (Region reg)
+				RegionTraverser.BreadthFirstTraverse(__instance.Position, map, (Region from, Region to) => __instance.Position.InHorDistOf(to.extentsClose.ClosestCellTo(__instance.Position), 5f), delegate (Region reg)
 				{
 					foreach (Thing thing in reg.ListerThings.ThingsInGroup(ThingRequestGroup.Pawn))
 					{
