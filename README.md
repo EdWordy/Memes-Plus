@@ -14,4 +14,4 @@ Smash Phil - C#, XML, General Concept
 
 ---
 
-Version 0.3 for Rimworld 1.3 (Ideology required)
+Version 0.4 for Rimworld 1.3 (Ideology required)
