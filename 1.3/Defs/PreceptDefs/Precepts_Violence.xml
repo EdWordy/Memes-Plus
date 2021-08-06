@@ -13,7 +13,7 @@
 
 	<HistoryEventDef>
 		<defName>ObservedViolence</defName>
-		<label>Observed Violence</label>
+		<label>Fighting</label>
 	</HistoryEventDef>
 	
 	<HistoryEventDef>
