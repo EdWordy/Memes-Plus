@@ -8,9 +8,9 @@ Adds several new memes and precepts to the game.
 
 Contributors:
 
-TedDraws - XML, General Concept
+TedDraws - XML, General Concepts
 
-Smash Phil - C#, XML, General Concept
+Smash Phil - C#, XML, General Concepts
 
 ---
 
