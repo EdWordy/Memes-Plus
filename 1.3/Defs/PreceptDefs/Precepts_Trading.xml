@@ -66,7 +66,7 @@
 	
 	<!-- Loves Trade -->
 	<PreceptDef>
-		<defName>Violence_Preferred</defName>
+		<defName>Trading_Preferred</defName>
 		<issue>Trading</issue>
 		<label>preferred</label>
 		<description>Money and wealth is great, and more of it is even better.</description>
