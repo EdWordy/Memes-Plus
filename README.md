@@ -10,7 +10,7 @@ Contributors:
 
 TedDraws - XML, General Concepts
 
-Smash Phil - C#, XML, General Concepts
+Smash Phil - C#, General Concepts
 
 ---
 
