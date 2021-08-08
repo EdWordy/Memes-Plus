@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Issues -->
+
+	<IssueDef>
+		<defName>Trading</defName>
+		<label>Trading</label>
+		<iconPath>UI/Issues/Trading</iconPath>
+	</IssueDef>
+
+	<!-- History event def -->
+
+	<HistoryEventDef>
+		<defName>Trading</defName>
+		<label>Trading</label>
+	</HistoryEventDef>
+	
+	<HistoryEventDef>
+		<defName>CommittedTrade</defName>
+		<label>Committed Trade</label>
+	</HistoryEventDef>
+
+	<!-- Indifferent Trade -->
+	<PreceptDef>
+		<defName>Trade_Acceptable</defName>
+		<issue>Trading</issue>
+		<label>acceptable</label>
+		<description>Trading happens, who cares really.</description>
+		<impact>Low</impact>
+		<displayOrderInIssue>20</displayOrderInIssue>
+		<displayOrderInImpact>100</displayOrderInImpact>
+		<associatedMemes>
+			<li>Transhumanist</li>
+			<li>Raider</li>
+			<li>Tunneler</li>
+			<li>HumanPrimacy</li>
+		</associatedMemes>
+	</PreceptDef>
+  
+	<!-- Hates Trade -->
+	<PreceptDef>
+		<defName>Trade_Abhorrent</defName>
+		<issue>Trading</issue>
+		<label>abhorrent</label>
+		<description>Trading is a heresy.</description>
+		<impact>High</impact>
+		<displayOrderInIssue>20</displayOrderInIssue>
+		<displayOrderInImpact>80</displayOrderInImpact>
+		<defaultSelectionWeight>1</defaultSelectionWeight>
+		<associatedMemes>
+			<li>Loyalist</li>
+			<li>AnimalPersonhood</li>
+		</associatedMemes>
+		<comps>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>Trading</eventDef>
+				<thought>Trading_Abhorrent</thought>
+			</li>
+			<li Class="PreceptComp_KnowsMemoryThought">
+				<eventDef>CommittedTrade</eventDef>
+				<thought>ObservedTrade_Know_Abhorrent</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	
+	<!-- Loves Trade -->
+	<PreceptDef>
+		<defName>Violence_Preferred</defName>
+		<issue>Trading</issue>
+		<label>preferred</label>
+		<description>Money and wealth is great, and more of it is even better.</description>
+		<impact>High</impact>
+		<displayOrderInIssue>20</displayOrderInIssue>
+		<displayOrderInImpact>80</displayOrderInImpact>
+		<defaultSelectionWeight>1</defaultSelectionWeight>
+		<associatedMemes>
+			<li>KnowledgeIsPower</li>
+			<li>GreedIsGood</li>
+		</associatedMemes>
+		<comps>
+			<li Class="PreceptComp_SelfTookMemoryThought">
+				<eventDef>Trading</eventDef>
+				<thought>Trading_Preferred</thought>
+			</li>
+			<li Class="PreceptComp_KnowsMemoryThought">
+				<eventDef>CommittedTrade</eventDef>
+				<thought>ObservedTrade_Know_Preferred</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	
+	
+	
+	<!-- Etc. -->
+	
+	
+	
+</Defs>
