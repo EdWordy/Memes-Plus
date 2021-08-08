@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+	<!-- Issue: Violence -->
+	
 	<!-- Hates Violence -->
 	<ThoughtDef>
 		<defName>ObservedViolence_Abhorrent</defName>
@@ -75,6 +77,78 @@
 		<stages>
 		  <li>
 			<label>committed violent act</label>
+			<baseOpinionOffset>20</baseOpinionOffset>
+		  </li>
+		</stages>
+	</ThoughtDef>
+	
+	<!--  Issue: Trading -->
+
+	<!-- Hates Trading -->
+	<ThoughtDef>
+		<defName>Trading_Abhorrent</defName>
+		<icon>Things/Mote/ThoughtSymbol/GenericBad</icon>
+		<showBubble>true</showBubble>
+		<thoughtClass>Thought_MemoryObservation</thoughtClass>
+		<durationDays>1</durationDays>
+		<stackedEffectMultiplier>0.5</stackedEffectMultiplier>
+		<stackLimit>5</stackLimit>
+		<nullifyingTraits>
+		  <li>Greedy</li>
+		</nullifyingTraits>
+		<stages>
+		  <li>
+			<label>hates trade</label>
+			<description>I hate trade.</description>
+			<baseMoodEffect>-5</baseMoodEffect>
+		  </li>
+		</stages>
+	</ThoughtDef>
+  
+	<ThoughtDef>
+		<defName>ObservedTrade_Know_Abhorrent</defName>
+		<thoughtClass>Thought_MemorySocial</thoughtClass>
+		<durationDays>5</durationDays>
+		<stackLimit>100</stackLimit>
+		<stackLimitForSameOtherPawn>3</stackLimitForSameOtherPawn>
+		<nullifyingTraits>
+			<li>Greedy</li>
+		</nullifyingTraits>
+		<stages>
+		  <li>
+			<label>committed trade</label>
+			<baseOpinionOffset>-20</baseOpinionOffset>
+		  </li>
+		</stages>
+	</ThoughtDef>
+	
+	<!-- Loves Trading -->
+	<ThoughtDef>
+		<defName>Trading_Preferred</defName>
+		<icon>Things/Mote/ThoughtSymbol/GenericGood</icon>
+		<showBubble>true</showBubble>
+		<thoughtClass>Thought_MemoryObservation</thoughtClass>
+		<durationDays>1</durationDays>
+		<stackedEffectMultiplier>0.5</stackedEffectMultiplier>
+		<stackLimit>5</stackLimit>
+		<stages>
+		  <li>
+			<label>loves trade</label>
+			<description>I love trade.</description>
+			<baseMoodEffect>5</baseMoodEffect>
+		  </li>
+		</stages>
+	</ThoughtDef>
+  
+	<ThoughtDef>
+		<defName>ObservedTrade_Know_Preferred</defName>
+		<thoughtClass>Thought_MemorySocial</thoughtClass>
+		<durationDays>5</durationDays>
+		<stackLimit>100</stackLimit>
+		<stackLimitForSameOtherPawn>3</stackLimitForSameOtherPawn>
+		<stages>
+		  <li>
+			<label>committed trade</label>
 			<baseOpinionOffset>20</baseOpinionOffset>
 		  </li>
 		</stages>
